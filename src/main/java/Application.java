@@ -1,8 +1,12 @@
-import github.GithubCliet;
+import java.util.List;
 
 public class Application {
     public static void main(String[] args){
-        GithubCliet gc = new GithubCliet();
-        System.out.println(gc.getEvents() +"\n");
+        TodoClient td = new TodoClient();
+
+
+        List<Todo> list = td.getTodos();
+        System.out.print(list);
+
     }
 }
